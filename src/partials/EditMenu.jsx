@@ -33,20 +33,7 @@ function EditMenu({
 
   return (
     <div {...rest}>
-      <button
-        ref={trigger}
-        className={`text-slate-400 hover:text-slate-500 rounded-full ${dropdownOpen && 'bg-slate-100 text-slate-500'}`}
-        aria-haspopup="true"
-        onClick={() => setDropdownOpen(!dropdownOpen)}
-        aria-expanded={dropdownOpen}
-      >
-        <span className="sr-only">Menu</span>
-        <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32">
-          <circle cx="16" cy="16" r="2" />
-          <circle cx="10" cy="16" r="2" />
-          <circle cx="22" cy="16" r="2" />
-        </svg>
-      </button>
+   
       <Transition
         show={dropdownOpen}
         tag="div"
